@@ -18,8 +18,8 @@ public class TestBaseClass {
     public void driverAwake(){
         System.setProperty(Driver.CHROMEDRIVER.getDriverInfo(), Driver.CHROMEPATH.getDriverInfo());
         webDriver.manage().window().maximize();
-        webDriver.get(Url.AMAZON.getUrlInfo());
-        wait = new WebDriverWait(webDriver, Duration.ofSeconds(3));
+        webDriver.get(Url.CODILITY.getUrlInfo());
+        wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
     }
     @AfterSuite
     public void tearDown(){
